@@ -1,0 +1,337 @@
+<html>
+    <head>
+
+        <title>IntelliAttend AI - Smart Attendance Zero Effort</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+        <link rel="icon" type="image/png" href="{{url_for('static',filename='img/image.png')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{url_for('static',filename='img/image.png')}}" style="height: 32px;" alt="IntelliAttend ai">
+            <div class="logo-text">IntelliAttend AI</div>
+
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#journey">Journey</a>
+            <a href="#tech-stack">Tech Stack</a>
+        </div>
+
+
+        <div class="nav-cta">
+            <a href="https://intelliattend-ai-main.streamlit.app/" class="btn-pill">
+                Start AI attendance
+
+            </a>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div class="badge">
+            Welcome to IntelliAttend AI
+        </div>
+        <h1>AI Powered<br>Attendance <span>System</span></h1>
+        <div class="hero-actions">
+            <a href="https://intelliattend-ai-main.streamlit.app/" class="btn-cta">
+                Start AI attendance
+            </a>
+            <a href="#features" class="link-action">
+                Explore More
+            </a>
+
+            <div class="floating-card card-left">
+                <div class="card-img">
+                    <img src="{{url_for('static',filename='img/demo/image4.png')}}" alt="landing img 1">
+                </div>
+            </div>
+            <div class="floating-card card-right">
+                <div class="card-img">
+                    <img src="{{url_for('static',filename='img/demo/main.png')}}" alt="landing img 2">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section id="features" class="features">
+    <h2>Innovative Features</h2>
+    
+    <!-- Use only ONE grid container for all cards -->
+    <div class="feature-grid">
+        
+        <!-- Card 1 -->
+        <div class="feature-card">
+            <div class="f-icon-box">📷</div>
+            <h3>AI Face Analysis</h3>
+            <p>Advanced neural networks recognize every student's face from a single class photo, making attendance instant and accurate</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card">
+            <div class="f-icon-box">🎙</div>
+            <h3>Sequential Voice ID</h3>
+            <p>Students say "Present" one-by-one, and our audio-AI matches their voice biometrics against stored embeddings in real-time</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card">
+            <div class="f-icon-box">📱</div>
+            <h3>QR-Driven Roster</h3>
+            <p>Course codes generate unique QR codes for instant student enrollment. No more manual entry or data management headaches.</p>
+        </div>
+    
+
+    </div> <!-- End of feature-grid -->
+    </section>
+
+
+    <section id="journey" class="teacher-flow">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align: center; margin-bottom: 40px; display: block;">--Workflow--</div>
+            <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">The Teacher's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 01</div>
+                    <h3>Secure Login</h3>
+                    <p>Start your session with our high-security authentication portal.Your data is encrypted and synced across all your devices.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/teacherlogin.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 02</div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>Manage all your subjects, attendance logs, and student roasters from a single, beautiful unified stream.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/image1.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 03</div>
+                    <h3>Course Management</h3>
+                    <p>Creating a new subject is a breeze.Just name it, and IntelliAttend AI generates everything you need to start tracking.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/image2.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 04</div>
+                    <h3>FaceID Attendance</h3>
+                    <p>Use high-speed computer vision to scan the entire room.Our AI identifies every student from a single class photo in milliseconds.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/image3.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 05</div>
+                    <h3>Voice ID Attendance</h3>
+                    <p>Switch to voice mode for a futuristic roll-call.Students speak sequentially, and our AI matches their unique voice signatures.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/image4.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 06</div>
+                    <h3>Actionable Records</h3>
+                    <p>Review and manage historical logs. View confidence scores,download CSV reports, and track long-term attendance trends.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/image.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+    <section id="journey" class="teacher-flow">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align: center; margin-bottom: 40px; display: block;">--Workflow--</div>
+            <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">The Student's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 01</div>
+                    <h3>Secure Login</h3>
+                    <p>Start your session with our high-security authentication portal.Your data is encrypted and synced across all your devices.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/registerstu.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 02</div>
+                    <h3>Enrollment</h3>
+                    <p>Students can enroll in their respective subjects.</p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/demo/enroll.png')}}" alt="teacher-login">
+                </div>
+            </div>
+
+            
+
+    </section>
+
+
+
+
+
+        <section id="tech-stack" class="tech-stack">
+    <span class="section-tag">~~ Our Backend ~~</span>
+    <h2>Advanced Tech Stack</h2>
+
+    <!-- OPEN GRID ONCE -->
+    <div class="tech-grid">
+        
+        <!-- Item 1 -->
+        <div class="tech-item">
+            <div class="tech-card">
+                <div class="t-icon">⚡</div>
+                <h4>Streamlit & Flask</h4>
+                <p>Reactive frontend architecture paired with a robust Flask landing layer.</p>
+                <span class="tech-tag">Platform</span>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="tech-item">
+            <div class="tech-card">
+                <div class="t-icon">👁</div>
+                <h4>Face Registration</h4>
+                <p>Leveraging FaceRecognition and Dlib for high-fidelity facial biometrics.</p>
+                <span class="tech-tag">Vision AI</span>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="tech-item">
+            <div class="tech-card">
+                <div class="t-icon">🎙</div>
+                <h4>Voice Embeddings</h4>
+                <p>Utilizing Resemblyzer and Librosa for unique student voice signatures.</p>
+                <span class="tech-tag">Audio AI</span>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="tech-item">
+            <div class="tech-card">
+                <div class="t-icon">☁️</div>
+                <h4>Supabase Cloud</h4>
+                <p>Real-time PostgreSQL infrastructure with secure auth and sync.</p>
+                <span class="tech-tag">Storage</span>
+            </div>
+        </div>
+
+    </div> <!-- CLOSE GRID ONCE -->
+</section>
+
+
+    <section class="purple-section">
+        <h2>Ready to upgrade your classroom ❔</h2>
+        <p>Join thousands of educators who have simplified their day with IntelliAttend AI. The smart AI powered attendance system is just one click away</p>
+        <a href="" class="btn-white">Start IntelliAttend AI Now</a>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="{{url_for('static',filename='img/image.png')}}" style="height: 32px"; alt="IntelliAttend AI">
+                    <div class="logo-text">IntelliAttend AI</div>
+                </div>
+                
+            </div>
+        
+        <div class="footer-links">
+            <h4>Products</h4>
+            <ul>
+                <li>
+                    <a href="#features">AI Attendance</a>
+                </li>
+                <li>
+                    <a href="#features">Smart Roaster</a>
+                </li>
+                <li>
+                    <a href="#tech">Tech Stack</a>
+                </li>
+                <li>
+                    <a href="#student-journey">Student Portal</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Experience</h4>
+            <ul>
+                <li>
+                    <a href="#journey">Teacher Journey</a>
+                </li>
+                <li>
+                    <a href="#student-journey">Sudent journey</a>
+                </li>
+                <li>
+                    <a href="#featues">Voice ID Roll-call</a>
+                </li>
+                <li>
+                    <a href="#featues">FaceID Scan</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+                <li>
+                    <a href="#">About US</a>
+                </li>
+                <li>
+                    <a href="#features">How it works</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms of use</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 IntelliAttend AI. Build with ❤️ for educators everywhere</p>
+        </div>
+    </footer>
+</body>
+</html>
